@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('images/bg-desktop.svg'), hsl(257, 40%, 49%);
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 40px;
+}
+.logo{
+    width: 190px;
+}
+
+/* MAIN CONTENT */
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 50px 10px 40px;
+}
+.mockup{
+    width: 53%;
+}
+
+/* main-right */
+.main-right{
+    width: 42%;
+    position: relative;
+    top: -60px;
+}
+.main-heading{
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #fff;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.main-paragraph{
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 35px;
+}
+.button{
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 50px 12px;
+    box-shadow: 0 3px 10px hsl(0, 0%, 13%);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    position: relative;
+    left: -2px;
+}
+
+/* SOCIALS */
+.socials{
+    margin-bottom: 20px;
+    width: 11%;
+    position: relative;
+    right: -86%;
+}
+.fa-brands{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f{
+    padding: 7px 10px;
+}
+.fa-instagram{
+    padding: 7px 8px;
+}
+/* ACTIVE STATES */
+.button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+.fa-brands:hover{
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+
+/* MEDIA SCREEN STYLING */
+@media(max-width: 500px){
+    body{
+        background: url('images/bg-mobile.svg'), hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    header{
+        padding:  30px 25px;
+    }
+    .logo{
+        width: 130px;
+    }
+    .main{
+        flex-direction: column;
+        margin: 30px 25px 15px;
+    }
+    .mockup{
+        width: 100%;
+        margin-bottom: 120px;
+    }
+    /* main right */
+    .main-right{
+        width: 100%;
+    }
+    .main-heading{
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+    }
+    .main-paragraph{
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.5;
+        width: 95%;
+        margin: 0 auto 30px;
+    }
+    .button{
+        position: unset;
+        text-align: center;
+        width: 60%;
+        display: block;
+        margin: auto;
+        font-size: 14px;
+    }
+    .socials{
+        width: 35%;
+        right: -33%;
+        margin-bottom: 40px;
+    }
+}
